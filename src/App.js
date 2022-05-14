@@ -44,7 +44,7 @@ export default function App($app) {
       }
       const directoryLength = this.state.directoryTree.length;
       if (index === directoryLength - 1) return;
-      //parentDirectory를 잘라야 하고,
+      //parentDirectory를 잘라야 함.
       const directoryTree = this.state.directoryTree.slice(0, index + 1);
       const files = cache[directoryId];
       const nextState = {
